@@ -4,7 +4,7 @@ export default {};
 <template>
   <div class="wrapper">
     <div class="overlay">
-      <div class="container">
+      <div class="my-container">
         <div class="nav">
           <div class="logo">
             <span class="nex">NEX</span>
@@ -51,7 +51,9 @@ export default {};
   .overlay {
     background-color: rgba(0, 0, 0, 0.45);
     width: 100%;
-    .container {
+    display: flex;
+    justify-content: center;
+    .my-container {
       .nav {
         color: $whites;
         display: flex;

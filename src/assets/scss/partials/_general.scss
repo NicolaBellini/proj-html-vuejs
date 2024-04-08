@@ -6,6 +6,10 @@
   // display: flex;
   // justify-content: center;
 }
+.my-container {
+  max-width: 1400px;
+  width: 60%;
+}
 .wrapper {
   width: 100%;
   display: flex;
@@ -13,5 +17,5 @@
 }
 .debug {
   border: 1px solid red;
-  background-color: rgba(255, 0, 0, 0.408);
+  background-color: rgba(255, 0, 0, 0.186);
 }

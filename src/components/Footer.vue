@@ -42,35 +42,38 @@ export default {
       </div>
 
       <div class="footer-list glass">
-        <h4>Lista 2</h4>
+        <h4>About</h4>
         <ul>
-          <li><a href="#">Elemento 2.1</a></li>
-          <li><a href="#">Elemento 2.2</a></li>
-          <li><a href="#">Elemento 2.3</a></li>
-          <li><a href="#">Elemento 2.4</a></li>
-          <li><a href="#">Elemento 2.5</a></li>
+          <li><a href="#">The Company</a></li>
+          <li><a href="#">Institutional</a></li>
+          <li><a href="#">Social & Events</a></li>
+          <li><a href="#">Innovation</a></li>
+          <li><a href="#">Enviroment</a></li>
+          <li><a href="#">Technology</a></li>
         </ul>
       </div>
 
       <div class="footer-list glass">
-        <h4>Lista 3</h4>
+        <h4>Transport</h4>
         <ul>
-          <li><a href="#">Elemento 3.1</a></li>
-          <li><a href="#">Elemento 3.2</a></li>
-          <li><a href="#">Elemento 3.3</a></li>
-          <li><a href="#">Elemento 3.4</a></li>
-          <li><a href="#">Elemento 3.5</a></li>
+          <li><a href="#">Industrialized</a></li>
+          <li><a href="#">Chemicals</a></li>
+          <li><a href="#">Packaage Liquids</a></li>
+          <li><a href="#">Construction</a></li>
+          <li><a href="#">Laminated Woods</a></li>
+          <li><a href="#">And Others</a></li>
         </ul>
       </div>
 
       <div class="footer-list glass">
-        <h4>Lista 4</h4>
+        <h4>Support</h4>
         <ul>
-          <li><a href="#">Elemento 4.1</a></li>
-          <li><a href="#">Elemento 4.2</a></li>
-          <li><a href="#">Elemento 4.3</a></li>
-          <li><a href="#">Elemento 4.4</a></li>
-          <li><a href="#">Elemento 4.5</a></li>
+          <li><a href="#">Responsability</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">About cookies</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Information</a></li>
         </ul>
       </div>
     </div>
@@ -89,9 +92,12 @@ export default {
     padding-top: 130px;
     display: flex;
     justify-content: space-between;
+    h4 {
+      color: $whites;
+    }
     .contacts {
       width: 240px;
-      margin-left: 0;
+
       .logo {
         margin-bottom: 25px;
         color: $whites;
@@ -111,6 +117,7 @@ export default {
         }
       }
       ul {
+        margin: 0;
         li {
           list-style: none;
           a {
@@ -118,6 +125,18 @@ export default {
             text-decoration: none;
           }
         }
+      }
+    }
+    .glass {
+      width: 260px;
+      margin: 0 15px;
+      background-color: red;
+      height: 330px;
+      ul {
+        margin-left: -20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
       }
     }
   }
