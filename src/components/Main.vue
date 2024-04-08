@@ -10,7 +10,9 @@ export default {
 </script>
 
 <template>
-  <div><p>main</p></div>
+  <div class="wrapper">
+    <div class="container">main</div>
+  </div>
 </template>
 
 <style lang="scss" scoped>

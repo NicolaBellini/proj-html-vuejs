@@ -7,7 +7,9 @@ export default {
 </script>
 
 <template>
-  <div><p>footer</p></div>
+  <div class="wrapper">
+    <div class="container">footer</div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
