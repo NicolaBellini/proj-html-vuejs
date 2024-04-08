@@ -56,7 +56,7 @@ export default {
       align-items: center;
     }
     .contact {
-      width: 50%;
+      width: 40%;
       justify-content: space-between;
       align-items: center;
     }

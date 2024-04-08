@@ -16,6 +16,7 @@ export default {
 <template>
   <div class="wrapper">
     <Jumbo />
+    main
   </div>
 </template>
 
