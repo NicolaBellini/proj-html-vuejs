@@ -10,7 +10,13 @@ export default {
 </script>
 
 <template>
-  <div>main</div>
+  <div><p>main</p></div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@use "../assets/scss/partials/variables" as *;
+@import "../assets/scss/main.scss";
+p {
+  color: $dark_green;
+}
+</style>

@@ -7,7 +7,13 @@ export default {
 </script>
 
 <template>
-  <div>footer</div>
+  <div><p>footer</p></div>
 </template>
 
-<style></style>
+<style lang="scss" scoped>
+@use "../assets/scss/partials/_variables.scss" as *;
+@import "../assets/scss/main.scss";
+p {
+  color: $dark_green;
+}
+</style>
