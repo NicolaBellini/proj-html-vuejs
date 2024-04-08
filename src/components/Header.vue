@@ -1,5 +1,6 @@
 <script>
 import { store } from "../data/store";
+
 export default {
   data() {
     return {
@@ -34,8 +35,6 @@ export default {
       </div>
 
       <!-- menu -->
-
-      <div class="nav"></div>
     </div>
   </div>
 </template>

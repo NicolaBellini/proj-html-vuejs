@@ -1,17 +1,21 @@
 <script>
 import { store } from "../data/store";
+import Jumbo from "./partials/Jumbo.vue";
 export default {
   data() {
     return {
       store,
     };
   },
+  components: {
+    Jumbo,
+  },
 };
 </script>
 
 <template>
   <div class="wrapper">
-    <div class="container">main</div>
+    <Jumbo />
   </div>
 </template>
 
