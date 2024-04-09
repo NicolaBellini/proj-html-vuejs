@@ -78,7 +78,7 @@ export default {};
       height: 360px;
       .my-card {
         position: relative;
-        padding: 30px;
+        padding: 15px;
         height: 360px;
         width: calc(100% / 3);
         h4 {

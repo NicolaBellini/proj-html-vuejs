@@ -9,11 +9,11 @@ export default {
 
 <template>
   <div class="wrapper">
-    <div class="my-container d-flex debug">
+    <div class="my-container d-flex">
       <div class="blender up debug"></div>
 
-      <div class="graphics debug">
-        <div class="text debug">
+      <div class="graphics">
+        <div class="text">
           <span>ABOUT THE COMPANY</span>
           <div class="underLine"></div>
           <h2>The Company</h2>
@@ -22,10 +22,10 @@ export default {
             commitment to customer service
           </p>
         </div>
-        <div class="graph d-flex debug">
-          <div class="graphSection d-flex debug">
+        <div class="graph d-flex">
+          <div class="graphSection d-flex">
             <div class="donutPlace">
-              <DonutChart class="donut debug" />
+              <DonutChart class="donut" />
             </div>
             <div class="donutText">
               <h3>Leadership</h3>
@@ -35,9 +35,9 @@ export default {
               </p>
             </div>
           </div>
-          <div class="graphSection d-flex debug">
+          <div class="graphSection d-flex">
             <div class="donutPlace">
-              <DonutChart class="donut debug" />
+              <DonutChart class="donut" />
             </div>
             <div class="donutText">
               <h3>Psicology</h3>
@@ -47,9 +47,9 @@ export default {
               </p>
             </div>
           </div>
-          <div class="graphSection d-flex debug">
+          <div class="graphSection d-flex">
             <div class="donutPlace">
-              <DonutChart class="donut debug" />
+              <DonutChart class="donut" />
             </div>
             <div class="donutText">
               <h3>Flexibility</h3>
@@ -64,7 +64,7 @@ export default {
 
       <div class="blender down debug"></div>
     </div>
-    <div class="image debug">
+    <div class="image">
       <img src="../../../public/img/about-5.jpg" alt="" />
     </div>
   </div>
@@ -108,7 +108,8 @@ export default {
           width: 112px;
           background-color: $dark_green_bg;
           top: 153px;
-          left: 465px;
+          left: 372px;
+          border-radius: 4px;
         }
         width: 480px;
         height: 180px;

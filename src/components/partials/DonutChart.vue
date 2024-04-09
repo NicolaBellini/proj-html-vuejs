@@ -3,8 +3,8 @@ export default {};
 </script>
 
 <template>
-  <div class="donutWrapper debug d-flex">
-    <div class="donutCenter d-flex debug">
+  <div class="donutWrapper d-flex">
+    <div class="donutCenter d-flex">
       <h2>0</h2>
       <span>%</span>
     </div>
