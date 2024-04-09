@@ -15,6 +15,7 @@ export default {
       <div class="graphics debug">
         <div class="text debug">
           <span>ABOUT THE COMPANY</span>
+          <div class="underLine"></div>
           <h2>The Company</h2>
           <p>
             With all of this expertise and capability comes an unrivalled
@@ -66,9 +67,20 @@ export default {
       justify-content: center;
       align-items: flex-end;
       .text {
+        .underLine {
+          position: absolute;
+          height: 60px;
+          width: 112px;
+          background-color: $dark_green_bg;
+          top: 153px;
+          left: 465px;
+        }
         width: 480px;
         height: 180px;
         margin-bottom: 100px;
+        h2 {
+          color: $whites;
+        }
         span {
           color: $dark_green;
           font-weight: 600;
