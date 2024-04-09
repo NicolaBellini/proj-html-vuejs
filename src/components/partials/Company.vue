@@ -22,8 +22,43 @@ export default {
             commitment to customer service
           </p>
         </div>
-        <div class="graph debug">
-          <DonutChart class="donut" />
+        <div class="graph d-flex debug">
+          <div class="graphSection d-flex debug">
+            <div class="donutPlace">
+              <DonutChart class="donut debug" />
+            </div>
+            <div class="donutText">
+              <h3>Leadership</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatem, labore!
+              </p>
+            </div>
+          </div>
+          <div class="graphSection d-flex debug">
+            <div class="donutPlace">
+              <DonutChart class="donut debug" />
+            </div>
+            <div class="donutText">
+              <h3>Psicology</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatem, labore!
+              </p>
+            </div>
+          </div>
+          <div class="graphSection d-flex debug">
+            <div class="donutPlace">
+              <DonutChart class="donut debug" />
+            </div>
+            <div class="donutText">
+              <h3>Flexibility</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatem, labore!
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -65,7 +100,7 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-end;
+
       .text {
         .underLine {
           position: absolute;
@@ -89,8 +124,16 @@ export default {
       .graph {
         width: 480px;
         height: 500px;
-        DonutChart {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        .donutPlace {
           height: 100px;
+          margin-right: 20px;
+        }
+        h3 {
+          color: $whites;
+          font-weight: 600;
         }
       }
     }
