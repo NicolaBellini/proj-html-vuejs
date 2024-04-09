@@ -5,6 +5,7 @@ import Jumbo from "./partials/Jumbo.vue";
 
 import LogisticServices from "./partials/LogisticServices.vue";
 import LogosVue from "./partials/Logos.vue";
+import LatestVue from "./partials/Latest.vue";
 
 export default {
   data() {
@@ -17,6 +18,7 @@ export default {
     LogisticServices,
     CompanyVue,
     LogosVue,
+    LatestVue,
   },
 };
 </script>
@@ -27,6 +29,7 @@ export default {
     <LogisticServices />
     <CompanyVue />
     <LogosVue />
+    <LatestVue />
     main
   </div>
 </template>
