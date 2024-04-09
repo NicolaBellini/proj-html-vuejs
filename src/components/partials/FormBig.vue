@@ -1,5 +1,12 @@
 <script>
-export default {};
+import { store } from "../../data/store";
+export default {
+  data() {
+    return {
+      store,
+    };
+  },
+};
 </script>
 
 <template>
@@ -66,6 +73,21 @@ export default {};
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos.
         </p>
+        <div class="contactGroup d-flex">
+          <div class="icons d-flex">
+            <div class="underLine a"></div>
+            <i class="fa-solid fa-phone"></i>
+            <div class="underLine b"></div>
+            <i class="fa-solid fa-envelope"></i>
+            <div class="underLine c"></div>
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="d-flex flex-column my-contacts">
+            <span>{{ store.contacts.phone }}</span>
+            <span> {{ store.contacts.mail }}</span>
+            <span> {{ store.contacts.location }}</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -103,6 +125,44 @@ export default {};
     .text {
       height: 460px;
       width: 360px;
+      .contactGroup {
+        height: 190px;
+
+        .icons {
+          position: relative;
+          color: $dark_green;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          width: 50px;
+        }
+        .underLine {
+          position: absolute;
+          height: 40px;
+          width: 40px;
+          background-color: $dark_green_bg;
+          left: 5px;
+          border-radius: 50%;
+          &.a {
+            top: 11px;
+          }
+          &.b {
+            top: 75px;
+          }
+          &.c {
+            top: 139px;
+          }
+        }
+
+        .my-contacts {
+          margin-left: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-around;
+        }
+      }
     }
   }
 }
