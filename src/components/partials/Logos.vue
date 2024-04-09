@@ -36,7 +36,7 @@ export default {};
   .my-container {
     display: flex;
     align-items: center;
-    // filter: grayscale(100%);
+
     filter: invert(80%);
     .logo {
       display: flex;
