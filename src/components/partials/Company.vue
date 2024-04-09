@@ -1,17 +1,35 @@
 <script>
-export default {};
+import DonutChart from "./DonutChart.vue";
+export default {
+  components: {
+    DonutChart,
+  },
+};
 </script>
 
 <template>
   <div class="wrapper">
     <div class="my-container d-flex debug">
       <div class="blender up debug"></div>
+
       <div class="graphics debug">
-        <div class="text debug"></div>
-        <div class="graph debug"></div>
+        <div class="text debug">
+          <span>ABOUT THE COMPANY</span>
+          <h2>The Company</h2>
+          <p>
+            With all of this expertise and capability comes an unrivalled
+            commitment to customer service
+          </p>
+        </div>
+        <div class="graph debug">
+          <DonutChart class="donut" />
+        </div>
       </div>
-      <div class="image debug"></div>
+
       <div class="blender down debug"></div>
+    </div>
+    <div class="image debug">
+      <img src="../../../public/img/about-5.jpg" alt="" />
     </div>
   </div>
 </template>
@@ -22,12 +40,13 @@ export default {};
 .wrapper {
   height: 1030px;
   background-color: $body_dark;
+  position: relative;
   .my-container {
-    position: relative;
     .blender {
       position: absolute;
       height: 60px;
       width: 140px;
+      z-index: 3;
     }
     & .up {
       top: -30px;
@@ -50,15 +69,28 @@ export default {};
         width: 480px;
         height: 180px;
         margin-bottom: 100px;
+        span {
+          color: $dark_green;
+          font-weight: 600;
+        }
       }
       .graph {
         width: 480px;
         height: 500px;
+        DonutChart {
+          height: 100px;
+        }
       }
     }
-    .image {
-      width: 50%;
-      height: 100%;
+  }
+  .image {
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    img {
+      object-fit: cover;
     }
   }
 }
