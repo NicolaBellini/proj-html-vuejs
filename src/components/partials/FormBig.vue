@@ -11,8 +11,8 @@ export default {
 
 <template>
   <div class="wrapper">
-    <div class="my-container d-flex debug">
-      <div class="my-form debug d-flex flex-column justify-content-between">
+    <div class="my-container d-flex">
+      <div class="my-form d-flex flex-column justify-content-between">
         <div class="formTitle">
           <span>SEND A MESSAGE</span>
           <div class="underLine"></div>
@@ -67,7 +67,7 @@ export default {
         </div>
         <button>SEND</button>
       </div>
-      <div class="text debug">
+      <div class="text">
         <h4>Example Inc.</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
         <p>
@@ -127,6 +127,9 @@ export default {
     .text {
       height: 460px;
       width: 360px;
+      h4 {
+        font-size: 700 !important;
+      }
       .contactGroup {
         height: 190px;
 
