@@ -54,11 +54,17 @@ export default {
     .orari {
       width: 50%;
       align-items: center;
+      span {
+        color: $paragraph;
+      }
     }
     .contact {
       width: 40%;
       justify-content: space-between;
       align-items: center;
+      span {
+        color: $paragraph;
+      }
     }
   }
 }

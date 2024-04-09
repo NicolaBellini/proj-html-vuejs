@@ -72,6 +72,7 @@ export default {};
             border-bottom-left-radius: 20px;
           }
           .gen {
+            color: $whites;
             margin-left: 3px;
             font-weight: 600;
           }

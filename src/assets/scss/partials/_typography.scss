@@ -2,7 +2,10 @@
 h2 {
   font-size: 3rem;
   font-weight: 800;
+  position: relative;
+  z-index: 4;
 }
+
 p {
   color: $paragraph;
   margin-bottom: 30px;
@@ -17,4 +20,8 @@ p {
   padding: 10px 18px 10px;
   width: auto;
   margin-right: 8px;
+}
+span {
+  color: $dark_green;
+  font-weight: 600;
 }

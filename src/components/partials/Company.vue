@@ -116,6 +116,8 @@ export default {
         margin-bottom: 100px;
         h2 {
           color: $whites;
+          position: relative;
+          z-index: 4;
         }
         span {
           color: $dark_green;
@@ -131,6 +133,9 @@ export default {
         .donutPlace {
           height: 100px;
           margin-right: 20px;
+        }
+        span {
+          color: $whites !important;
         }
         h3 {
           color: $whites;
