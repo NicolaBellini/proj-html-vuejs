@@ -13,11 +13,13 @@ export default {
   <div class="wrapper">
     <div class="container">
       <div class="footer-list contacts">
-        <div class="logo">
-          <span class="nex">NEX</span>
-          <span class="gen">GEN</span>
-        </div>
         <ul>
+          <li>
+            <div class="logo">
+              <span class="nex">NEX</span>
+              <span class="gen">GEN</span>
+            </div>
+          </li>
           <li>
             <a href="#">A Functional HTML Template for Corporate & Business</a>
           </li>
@@ -37,7 +39,7 @@ export default {
               {{ store.contacts.location }}</a
             >
           </li>
-          <button><span>GET IN TOUCH</span></button>
+          <button>GET IN TOUCH</button>
         </ul>
       </div>
 
@@ -89,6 +91,7 @@ export default {
   background-size: cover;
   background-position: bottom center;
   .container {
+    font-size: 1.2rem;
     padding-top: 130px;
     display: flex;
     justify-content: space-between;
@@ -97,6 +100,7 @@ export default {
     }
     .contacts {
       width: 240px;
+      margin-right: 30px;
 
       .logo {
         margin-bottom: 25px;
@@ -120,23 +124,59 @@ export default {
         margin: 0;
         li {
           list-style: none;
+          margin-bottom: 15px;
           a {
             color: $paragraph;
             text-decoration: none;
           }
         }
+        button {
+          background-color: transparent;
+          color: $whites;
+          margin-top: 30px;
+          outline: 1px solid $dark_green;
+          border: none;
+          border-radius: 4px;
+          padding: 7px 20px;
+          transition: 0.5s ease all;
+          &:hover {
+            background-color: $dark_green;
+          }
+        }
       }
     }
     .glass {
+      padding: 30px 0 0 20px;
       width: 260px;
       margin: 0 15px;
-      background-color: red;
+      border-radius: 7px;
+      background-color: rgba(255, 255, 255, 0.101);
       height: 330px;
+      ul li::before {
+        content: "\203A";
+        color: $paragraph;
+        font-size: 2rem;
+        line-height: 16px;
+        vertical-align: text-top;
+        margin-right: 5px;
+      }
+      h4 {
+        margin-left: 10px;
+      }
       ul {
         margin-left: -20px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+
+        li {
+          list-style: none;
+          margin-top: 7px;
+          a {
+            text-decoration: none;
+            color: $paragraph;
+          }
+        }
       }
     }
   }
