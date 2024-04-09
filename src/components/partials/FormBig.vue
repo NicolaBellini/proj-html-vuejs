@@ -88,6 +88,7 @@ export default {
             <span> {{ store.contacts.location }}</span>
           </div>
         </div>
+        <button class="btn btn-outline-success mt-4">VIEW MAP</button>
       </div>
     </div>
   </div>
@@ -102,6 +103,7 @@ export default {
     padding-top: 130px;
     justify-content: center;
     .my-form {
+      padding-right: 40px;
       height: 580px;
       width: 720px;
       input,
