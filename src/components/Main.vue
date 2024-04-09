@@ -2,7 +2,7 @@
 import { store } from "../data/store";
 import CompanyVue from "./partials/Company.vue";
 import Jumbo from "./partials/Jumbo.vue";
-
+import FormLittle from "./partials/FormLittle.vue";
 import LogisticServices from "./partials/LogisticServices.vue";
 import LogosVue from "./partials/Logos.vue";
 import LatestVue from "./partials/Latest.vue";
@@ -19,6 +19,7 @@ export default {
     CompanyVue,
     LogosVue,
     LatestVue,
+    FormLittle,
   },
 };
 </script>
@@ -30,6 +31,7 @@ export default {
     <CompanyVue />
     <LogosVue />
     <LatestVue />
+    <FormLittle />
     main
   </div>
 </template>
