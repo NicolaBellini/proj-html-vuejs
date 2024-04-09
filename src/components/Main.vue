@@ -6,6 +6,7 @@ import FormLittle from "./partials/FormLittle.vue";
 import LogisticServices from "./partials/LogisticServices.vue";
 import LogosVue from "./partials/Logos.vue";
 import LatestVue from "./partials/Latest.vue";
+import FormBigVue from "./partials/FormBig.vue";
 
 export default {
   data() {
@@ -20,6 +21,7 @@ export default {
     LogosVue,
     LatestVue,
     FormLittle,
+    FormBigVue,
   },
 };
 </script>
@@ -32,6 +34,7 @@ export default {
     <LogosVue />
     <LatestVue />
     <FormLittle />
+    <FormBigVue />
     main
   </div>
 </template>
