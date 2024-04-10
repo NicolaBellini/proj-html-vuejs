@@ -1,5 +1,12 @@
 <script>
-export default {};
+import { store } from "../../data/store";
+export default {
+  data() {
+    return {
+      store,
+    };
+  },
+};
 </script>
 <template>
   <div class="wrapper">
@@ -11,13 +18,11 @@ export default {};
             <span class="gen">GEN</span>
           </div>
           <div class="menu d-flex">
+            <!-- nav lbar dinamica -->
             <ul class="d-flex">
-              <li><a href="">HOME</a></li>
-              <li><a href="">SERVICES</a></li>
-              <li><a href="">SKILLS</a></li>
-              <li><a href="">PARTNERS</a></li>
-              <li><a href="">BLOG</a></li>
-              <li><a href="">GET IN TOUCH</a></li>
+              <li v-for="(element, index) in store.navNames" :key="index">
+                <a href="">{{ element }}</a>
+              </li>
             </ul>
           </div>
         </div>

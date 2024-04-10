@@ -6,7 +6,7 @@ export default {};
   <div class="donutWrapper d-flex">
     <div class="donutCenter d-flex">
       <h2>0</h2>
-      <span>%</span>
+      <h6>%</h6>
     </div>
   </div>
 </template>
@@ -21,6 +21,8 @@ export default {};
   justify-content: center;
   align-items: center;
   background-color: $logos;
+  position: relative;
+
   .donutCenter {
     height: 90px;
     width: 90px;
@@ -32,7 +34,7 @@ export default {};
     h2 {
       font-size: 2.5rem;
     }
-    span {
+    h6 {
       font-size: 1.3rem;
     }
   }

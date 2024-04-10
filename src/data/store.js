@@ -1,8 +1,6 @@
 import { reactive } from "vue";
 
 export const store = reactive({
-  counter: 0,
-  mainTitle: "Vite state",
   social: {
     abb: "porcocane",
   },
@@ -19,4 +17,5 @@ export const store = reactive({
       linkedin: '<i class="fa-brands fa-linkedin-in"></i>',
     },
   },
+  navNames: ["HOME", "SERVICES", "SKILLS", "PARTNERS", "BLOG", "GET IN TOUCH"],
 });

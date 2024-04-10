@@ -1,5 +1,6 @@
 <script>
 import DonutChart from "./DonutChart.vue";
+
 export default {
   components: {
     DonutChart,
@@ -10,12 +11,7 @@ export default {
 <template>
   <div class="wrapper">
     <div class="my-container d-flex">
-      <div class="blender up debug">
-        <!-- <img
-          src="https://static.vecteezy.com/system/resources/thumbnails/041/855/251/small_2x/dots-monochrome-pattern-seamless-vector.jpg"
-          alt=""
-        /> -->
-      </div>
+      <div class="blender up"></div>
 
       <div class="graphics">
         <div class="text">
@@ -67,7 +63,7 @@ export default {
         </div>
       </div>
 
-      <div class="blender down debug"></div>
+      <div class="blender down"></div>
     </div>
     <div class="image">
       <img src="/img/about-5.jpg" alt="" />
@@ -86,24 +82,18 @@ export default {
     .blender {
       position: absolute;
       height: 60px;
-      width: 140px;
+      width: 150px;
       z-index: 3;
       overflow: hidden;
 
       background-image: radial-gradient(
           circle,
-          $light_green 2px,
-          transparent 2px
+          $light_green 4px,
+          transparent 4px
         ),
-        radial-gradient(circle, $light_green 2px, transparent 2px);
-      background-position: 0 0, 8px 8px;
+        radial-gradient(circle, $light_green 4px, transparent 4px);
+      background-position: 3px 12px, 3px 12px;
       background-size: 16px 16px;
-
-      // img {
-      //   // filter: ;
-      //   transform: scale(0.3) translateX(-910px) translateY(-598px);
-      //   object-fit: contain;
-      // }
     }
     & .up {
       top: -30px;

@@ -25,9 +25,11 @@ export default {
       <!-- per mettere i loghi scrivere vhtml -->
       <!-- <p v-html="social.twitter"></p> -->
       <div class="contact d-flex">
-        <span><i class="fa-solid fa-phone"></i>{{ store.contacts.phone }}</span>
         <span
-          ><i class="fa-solid fa-envelope"></i>{{ store.contacts.mail }}</span
+          ><i class="fa-solid fa-phone"></i> {{ store.contacts.phone }}</span
+        >
+        <span
+          ><i class="fa-solid fa-envelope"></i> {{ store.contacts.mail }}</span
         >
         <a v-html="store.contacts.social.facebook"></a>
         <a v-html="store.contacts.social.twitter"></a>
