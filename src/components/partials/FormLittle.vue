@@ -28,7 +28,7 @@ export default {};
 @import "../../assets/scss/main.scss";
 .wrapper {
   height: 455px;
-  background-image: url(../../../public/img/bg-1.jpg);
+  background-image: url(/img/bg-1.jpg);
   background-position: center;
   .my-container {
     justify-content: center;

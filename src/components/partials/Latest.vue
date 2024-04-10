@@ -18,15 +18,15 @@ export default {};
       </div>
       <div class="photo d-flex">
         <div class="my-card">
-          <img src="../../../public/img/news-1.jpg" alt="" />
+          <img src="/img/news-1.jpg" alt="" />
           <h4>Increasing creativity is possible for everyone</h4>
         </div>
         <div class="my-card">
-          <img src="../../../public/img/news-2.jpg" alt="" />
+          <img src="/img/news-2.jpg" alt="" />
           <h4>Because market research is part of the business plan</h4>
         </div>
         <div class="my-card">
-          <img src="../../../public/img/news-3.jpg" alt="" />
+          <img src="/img/news-3.jpg" alt="" />
           <h4>Working from home is now a trend</h4>
         </div>
       </div>

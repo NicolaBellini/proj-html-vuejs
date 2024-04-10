@@ -87,7 +87,7 @@ export default {
 @import "../assets/scss/main.scss";
 .wrapper {
   height: 670px;
-  background-image: url(../../public/img/bg-10.jpg);
+  background-image: url(/img/bg-10.jpg);
   background-size: cover;
   background-position: bottom center;
   .container {

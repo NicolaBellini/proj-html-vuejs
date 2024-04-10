@@ -46,7 +46,7 @@ export default {};
 @import "../../assets/scss/main.scss";
 .wrapper {
   height: 860px;
-  background-image: url(../../../public/img/jumbo.jpg);
+  background-image: url(/img/jumbo.jpg);
   background-size: cover;
   .overlay {
     background-color: rgba(0, 0, 0, 0.45);

@@ -65,7 +65,7 @@ export default {
       <div class="blender down debug"></div>
     </div>
     <div class="image">
-      <img src="../../../public/img/about-5.jpg" alt="" />
+      <img src="/img/about-5.jpg" alt="" />
     </div>
   </div>
 </template>
