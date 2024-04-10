@@ -40,4 +40,39 @@ export const store = reactive({
     "/img/logo-5.png",
     "/img/logo-1.png",
   ],
+  footerGroup: [
+    {
+      title: "About",
+      names: [
+        "The Company",
+        "Institutional",
+        "Social & Events",
+        "Innovation",
+        "Enviroment",
+        "Technology",
+      ],
+    },
+    {
+      title: "Transport",
+      names: [
+        "Industrialized",
+        "Chemicals",
+        "Packaage Liquids",
+        "Construction",
+        "Laminated Woods",
+        "And Others",
+      ],
+    },
+    {
+      title: "Support",
+      names: [
+        "Responsability",
+        "Terms of Use",
+        "About cookies",
+        "Privacy Policy",
+        "Accessibility",
+        "Information",
+      ],
+    },
+  ],
 });

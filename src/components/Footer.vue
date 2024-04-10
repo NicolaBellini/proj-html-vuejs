@@ -43,39 +43,16 @@ export default {
         </ul>
       </div>
 
-      <div class="footer-list glass">
-        <h4>About</h4>
+      <div
+        class="footer-list glass"
+        v-for="(item, index) in store.footerGroup"
+        :key="index"
+      >
+        <h4>{{ item.title }}</h4>
         <ul>
-          <li><a href="#">The Company</a></li>
-          <li><a href="#">Institutional</a></li>
-          <li><a href="#">Social & Events</a></li>
-          <li><a href="#">Innovation</a></li>
-          <li><a href="#">Enviroment</a></li>
-          <li><a href="#">Technology</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-list glass">
-        <h4>Transport</h4>
-        <ul>
-          <li><a href="#">Industrialized</a></li>
-          <li><a href="#">Chemicals</a></li>
-          <li><a href="#">Packaage Liquids</a></li>
-          <li><a href="#">Construction</a></li>
-          <li><a href="#">Laminated Woods</a></li>
-          <li><a href="#">And Others</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-list glass">
-        <h4>Support</h4>
-        <ul>
-          <li><a href="#">Responsability</a></li>
-          <li><a href="#">Terms of Use</a></li>
-          <li><a href="#">About cookies</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Accessibility</a></li>
-          <li><a href="#">Information</a></li>
+          <li v-for="(item, index) in item.names" :key="index">
+            <a href="#">{{ item }}</a>
+          </li>
         </ul>
       </div>
     </div>
