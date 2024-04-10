@@ -90,6 +90,10 @@ export default {
               display: flex;
               align-items: center;
               height: 50px;
+              transition: 0.2s all;
+              &:hover {
+                border-bottom: 2px solid $dark_green;
+              }
 
               a {
                 font-weight: 600;
@@ -102,6 +106,9 @@ export default {
               background-color: $button;
               padding: 10px 20px;
               margin-right: 0;
+              &:hover {
+                border-bottom: none;
+              }
             }
           }
         }
@@ -140,6 +147,11 @@ export default {
               border: none;
               outline: 2px solid $button;
               padding: 10px 22px;
+              transition: 0.3s all;
+              &:hover {
+                background-color: lighten($button, 5%);
+                outline: 2px solid lighten($button, 5%);
+              }
             }
             .second {
               padding: 10px 22px;
@@ -147,6 +159,11 @@ export default {
               background-color: transparent;
               border: none;
               outline: 2px solid $button;
+              transition: 0.3s all;
+              &:hover {
+                background-color: darken($light_green, 20%);
+                outline: 2px solid darken($light_green, 20%);
+              }
             }
             span {
               color: $whites;
