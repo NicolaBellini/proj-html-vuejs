@@ -1,5 +1,16 @@
 <script>
-export default {};
+import { store } from "../../data/store";
+import CardLatest from "./CardLatest.vue";
+export default {
+  components: {
+    CardLatest,
+  },
+  data() {
+    return {
+      store,
+    };
+  },
+};
 </script>
 <template>
   <div class="wrapper">
@@ -17,7 +28,12 @@ export default {};
         </div>
       </div>
       <div class="photo d-flex">
-        <div class="my-card">
+        <CardLatest
+          v-for="(item, index) in store.cardList"
+          :key="index"
+          :card="item"
+        />
+        <!-- <div class="my-card">
           <img src="/img/news-1.jpg" alt="" />
           <h4>Increasing creativity is possible for everyone</h4>
         </div>
@@ -28,7 +44,7 @@ export default {};
         <div class="my-card">
           <img src="/img/news-3.jpg" alt="" />
           <h4>Working from home is now a trend</h4>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

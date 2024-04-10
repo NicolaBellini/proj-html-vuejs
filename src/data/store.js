@@ -18,4 +18,19 @@ export const store = reactive({
     },
   },
   navNames: ["HOME", "SERVICES", "SKILLS", "PARTNERS", "BLOG", "GET IN TOUCH"],
+  cardList: [
+    {
+      img: "/img/news-1.jpg",
+      titolo: "Increasing creativity is possible for everyone",
+    },
+    {
+      img: "/img/news-2.jpg",
+      titolo: "Because market research is part of the business plan",
+    },
+    {
+      img: "/img/news-3.jpg",
+      titolo: "Working from home is now a trend",
+    },
+  ],
+  logoList: [],
 });
