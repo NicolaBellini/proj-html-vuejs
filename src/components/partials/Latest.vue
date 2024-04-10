@@ -33,18 +33,6 @@ export default {
           :key="index"
           :card="item"
         />
-        <!-- <div class="my-card">
-          <img src="/img/news-1.jpg" alt="" />
-          <h4>Increasing creativity is possible for everyone</h4>
-        </div>
-        <div class="my-card">
-          <img src="/img/news-2.jpg" alt="" />
-          <h4>Because market research is part of the business plan</h4>
-        </div>
-        <div class="my-card">
-          <img src="/img/news-3.jpg" alt="" />
-          <h4>Working from home is now a trend</h4>
-        </div> -->
       </div>
     </div>
   </div>
@@ -92,26 +80,6 @@ export default {
     }
     .photo {
       height: 360px;
-      .my-card {
-        position: relative;
-        padding: 15px;
-        height: 360px;
-        width: calc(100% / 3);
-        h4 {
-          width: 80%;
-          font-weight: 700;
-          color: $whites;
-          position: absolute;
-          bottom: 30px;
-          left: 35px;
-          text-align: center;
-        }
-        img {
-          max-width: 100%;
-          border-radius: 10px;
-          filter: brightness(60%);
-        }
-      }
     }
   }
 }

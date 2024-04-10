@@ -18,10 +18,14 @@ export default {
 @import "../../assets/scss/main.scss";
 
 .my-card {
+  margin-top: 40px;
+  margin-right: 20px;
   position: relative;
-  padding: 15px;
   height: 360px;
   width: calc(100% / 3);
+  &:last-child {
+    margin-right: 0;
+  }
   h4 {
     width: 80%;
     font-weight: 700;
