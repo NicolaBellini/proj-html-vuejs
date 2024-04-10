@@ -1,27 +1,19 @@
 <script>
-export default {};
+import { store } from "../../data/store";
+export default {
+  data() {
+    return {
+      store,
+    };
+  },
+};
 </script>
 
 <template>
   <div class="wrapper">
     <div class="my-container">
-      <div class="logo">
-        <img src="../../../public/img/logo-1.png" alt="" />
-      </div>
-      <div class="logo">
-        <img src="../../../public/img/logo-2.png" alt="" />
-      </div>
-      <div class="logo">
-        <img src="../../../public/img/logo-3.png" alt="" />
-      </div>
-      <div class="logo">
-        <img src="../../../public/img/logo-4.png" alt="" />
-      </div>
-      <div class="logo">
-        <img src="../../../public/img/logo-5.png" alt="" />
-      </div>
-      <div class="logo">
-        <img src="../../../public/img/logo-1.png" alt="" />
+      <div class="logo" v-for="(item, index) in store.logoList" :key="index">
+        <img :src="item" alt="" />
       </div>
     </div>
   </div>
