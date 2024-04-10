@@ -10,7 +10,12 @@ export default {
 <template>
   <div class="wrapper">
     <div class="my-container d-flex">
-      <div class="blender up debug"></div>
+      <div class="blender up debug">
+        <!-- <img
+          src="https://static.vecteezy.com/system/resources/thumbnails/041/855/251/small_2x/dots-monochrome-pattern-seamless-vector.jpg"
+          alt=""
+        /> -->
+      </div>
 
       <div class="graphics">
         <div class="text">
@@ -83,6 +88,22 @@ export default {
       height: 60px;
       width: 140px;
       z-index: 3;
+      overflow: hidden;
+
+      background-image: radial-gradient(
+          circle,
+          $light_green 2px,
+          transparent 2px
+        ),
+        radial-gradient(circle, $light_green 2px, transparent 2px);
+      background-position: 0 0, 8px 8px;
+      background-size: 16px 16px;
+
+      // img {
+      //   // filter: ;
+      //   transform: scale(0.3) translateX(-910px) translateY(-598px);
+      //   object-fit: contain;
+      // }
     }
     & .up {
       top: -30px;
