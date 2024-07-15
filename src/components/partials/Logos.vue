@@ -11,7 +11,7 @@ export default {
 
 <template>
   <div class="wrapper">
-    <div class="my-container">
+    <div class="my-container d-flex flex-column flex-xl-row">
       <div class="logo" v-for="(item, index) in store.logoList" :key="index">
         <img :src="item" alt="" />
       </div>
@@ -28,6 +28,7 @@ export default {
   .my-container {
     display: flex;
     align-items: center;
+    padding: 6% 0px;
 
     filter: invert(80%);
     .logo {
@@ -35,11 +36,12 @@ export default {
       align-items: center;
       justify-content: center;
       height: 40px;
-      margin: 0 40px;
+      margin: 3px 40px;
       width: calc(100% / 6);
       img {
         max-height: 100%;
         max-width: 100%;
+        min-width: 60px;
       }
     }
   }
