@@ -11,7 +11,7 @@ export default {
 
 <template>
   <div class="wrapper">
-    <div class="my-container d-flex">
+    <div class="my-container d-flex flex-column flex-lg-row">
       <div class="my-form d-flex flex-column justify-content-between">
         <div class="formTitle">
           <span>SEND A MESSAGE</span>
@@ -98,14 +98,11 @@ export default {
 @use "../../assets/scss/partials/_variables.scss" as *;
 @import "../../assets/scss/main.scss";
 .wrapper {
-  height: 850px;
+  padding: 10% 0;
   .my-container {
-    padding-top: 130px;
     justify-content: center;
     .my-form {
-      padding-right: 40px;
-      height: 580px;
-      width: 720px;
+      padding: 5% 0;
       input,
       textarea {
         background-color: $body_light;
@@ -126,7 +123,7 @@ export default {
     }
     .text {
       height: 460px;
-      width: 360px;
+
       h4 {
         font-size: 700 !important;
       }

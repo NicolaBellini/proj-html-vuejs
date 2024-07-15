@@ -143,7 +143,6 @@ export default {
       margin: 0 15px;
       border-radius: 7px;
       background-color: rgba(255, 255, 255, 0.101);
-      height: 330px;
 
       ul li::before {
         content: "\203A";
