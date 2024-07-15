@@ -17,7 +17,7 @@ export default {
     <div class="my-container d-flex flex-column">
       <div class="text">
         <span>OUR EDITORIAL CONTENT</span>
-        <div class="underLine"></div>
+        <div class="underLine d-none d-md-block"></div>
         <h2>Latest News</h2>
         <div class="textDown d-flex justify-content-between">
           <p>
@@ -27,7 +27,7 @@ export default {
           <button>SEE ALL</button>
         </div>
       </div>
-      <div class="photo d-flex">
+      <div class="photo d-lg-flex">
         <CardLatest
           v-for="(item, index) in store.cardList"
           :key="index"
@@ -42,12 +42,12 @@ export default {
 @use "../../assets/scss/partials/_variables.scss" as *;
 @import "../../assets/scss/main.scss";
 .wrapper {
-  height: 830px;
+  padding: 5%;
   .my-container {
     justify-content: center;
     .text {
       position: relative;
-      height: 170px;
+
       .underLine {
         position: absolute;
         height: 60px;
@@ -77,9 +77,9 @@ export default {
         color: $dark_green;
         font-weight: 700;
       }
-    }
-    .photo {
-      height: 360px;
+      .photo {
+        width: 100%;
+      }
     }
   }
 }

@@ -7,9 +7,15 @@ export default {
 </script>
 
 <template>
-  <div class="my-card">
-    <img :src="card.img" :alt="card.titolo" />
-    <h4>{{ card.titolo }}</h4>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col">
+        <div class="my-card">
+          <img :src="card.img" :alt="card.titolo" />
+          <h4>{{ card.titolo }}</h4>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -21,8 +27,7 @@ export default {
   margin-top: 40px;
   margin-right: 20px;
   position: relative;
-  height: 360px;
-  width: calc(100% / 3);
+
   &:last-child {
     margin-right: 0;
   }
@@ -32,13 +37,34 @@ export default {
     color: $whites;
     position: absolute;
     bottom: 30px;
-    left: 35px;
+    left: 5%;
     text-align: center;
   }
   img {
     max-width: 100%;
     border-radius: 10px;
     filter: brightness(60%);
+  }
+  @media (max-width: 576px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+
+    h4 {
+      position: static;
+      bottom: -5%;
+      width: auto;
+      margin-left: 20px;
+      color: rgb(69, 69, 69);
+      transform: none;
+    }
+
+    img {
+      max-width: 80%;
+      filter: brightness(100%);
+    }
   }
 }
 </style>

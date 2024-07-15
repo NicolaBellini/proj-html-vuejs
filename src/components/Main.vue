@@ -35,7 +35,6 @@ export default {
     <LatestVue />
     <FormLittle />
     <FormBigVue />
-    main
   </div>
 </template>
 
