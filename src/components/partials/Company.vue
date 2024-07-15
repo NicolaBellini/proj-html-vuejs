@@ -10,25 +10,29 @@ export default {
 
 <template>
   <div class="wrapper">
-    <div class="my-container d-flex">
+    <div
+      class="my-container d-flex justify-content-start justify-content-lg-center justify-content-xxl-start me-4"
+    >
       <div class="blender up"></div>
 
-      <div class="graphics">
-        <div class="text">
+      <div class="graphics mt-3">
+        <div class="text w-100">
           <span>ABOUT THE COMPANY</span>
-          <div class="underLine"></div>
-          <h2>The Company</h2>
-          <p>
-            With all of this expertise and capability comes an unrivalled
-            commitment to customer service
-          </p>
+
+          <div>
+            <h2>The Company</h2>
+            <p>
+              With all of this expertise and capability comes an unrivalled
+              commitment to customer service
+            </p>
+          </div>
         </div>
         <div class="graph d-flex">
-          <div class="graphSection d-flex">
+          <div class="graphSection d-flex flex-column flex-sm-row">
             <div class="donutPlace">
               <DonutChart class="donut" />
             </div>
-            <div class="donutText">
+            <div class="donutText m-4">
               <h3>Leadership</h3>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -36,11 +40,11 @@ export default {
               </p>
             </div>
           </div>
-          <div class="graphSection d-flex">
+          <div class="graphSection d-flex flex-column flex-sm-row">
             <div class="donutPlace">
               <DonutChart class="donut" />
             </div>
-            <div class="donutText">
+            <div class="donutText m-4">
               <h3>Psicology</h3>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -48,11 +52,11 @@ export default {
               </p>
             </div>
           </div>
-          <div class="graphSection d-flex">
+          <div class="graphSection d-flex flex-column flex-sm-row">
             <div class="donutPlace">
               <DonutChart class="donut" />
             </div>
-            <div class="donutText">
+            <div class="donutText m-4">
               <h3>Flexibility</h3>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -65,7 +69,7 @@ export default {
 
       <div class="blender down"></div>
     </div>
-    <div class="image">
+    <div class="image d-none d-xxl-block">
       <img src="/img/about-5.jpg" alt="" />
     </div>
   </div>
@@ -75,7 +79,6 @@ export default {
 @use "../../assets/scss/partials/_variables.scss" as *;
 @import "../../assets/scss/main.scss";
 .wrapper {
-  height: 1030px;
   background-color: $body_dark;
   position: relative;
   .my-container {
@@ -85,7 +88,6 @@ export default {
       width: 150px;
       z-index: 3;
       overflow: hidden;
-
       background-image: radial-gradient(
           circle,
           $light_green 4px,
@@ -106,24 +108,13 @@ export default {
       transform: translateX(-50%);
     }
     .graphics {
-      width: 50%;
+      width: 100%;
       height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
 
       .text {
-        .underLine {
-          position: absolute;
-          height: 60px;
-          width: 112px;
-          background-color: $dark_green_bg;
-          top: 153px;
-          left: 372px;
-          border-radius: 4px;
-        }
-        width: 480px;
-        height: 180px;
         margin-bottom: 100px;
         h2 {
           color: $whites;
@@ -136,8 +127,6 @@ export default {
         }
       }
       .graph {
-        width: 480px;
-        height: 500px;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
@@ -145,12 +134,15 @@ export default {
           height: 100px;
           margin-right: 20px;
         }
-        span {
-          color: $whites !important;
-        }
-        h3 {
-          color: $whites;
-          font-weight: 600;
+        .donutText {
+          width: 300px;
+          span {
+            color: $whites !important;
+          }
+          h3 {
+            color: $whites;
+            font-weight: 600;
+          }
         }
       }
     }
@@ -163,6 +155,11 @@ export default {
     left: 50%;
     img {
       object-fit: cover;
+    }
+  }
+  @media (min-width: 1400px) {
+    .text {
+      width: 50% !important;
     }
   }
 }
