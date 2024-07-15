@@ -10,16 +10,32 @@ export default {
 </script>
 <template>
   <div class="wrapper">
-    <div class="overlay">
-      <div class="my-container">
-        <div class="nav">
-          <div class="logo">
+    <div class="overlay d-flex justify-content-center align-items-center">
+      <div class="container my-container">
+        <div class="nav row align-items-center justify-content-between">
+          <div class="logo col-6 col-md-4">
             <span class="nex">NEX</span>
             <span class="gen">GEN</span>
           </div>
-          <div class="menu d-flex">
-            <!-- nav lbar dinamica -->
-            <ul class="d-flex">
+          <div class="menu col-6 col-md-8 d-none d-xl-block">
+            <ul class="d-flex justify-content-end">
+              <li v-for="(element, index) in store.navNames" :key="index">
+                <a href="">{{ element }}</a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown d-xl-none d-inline">
+            <a
+              class="btn dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Menu
+            </a>
+
+            <ul class="dropdown-menu">
               <li v-for="(element, index) in store.navNames" :key="index">
                 <a href="">{{ element }}</a>
               </li>
@@ -27,9 +43,11 @@ export default {
           </div>
         </div>
 
-        <div class="text-wrapper d-flex">
-          <div class="text">
-            <div class="underLine"></div>
+        <div
+          class="text-wrapper row justify-content-center justify-content-md-end align-items-center"
+        >
+          <div class="text col-12 col-md-8 col-lg-6">
+            <div class="underLine d-none d-lg-block"></div>
             <h1>Logistics that goes further</h1>
             <p>
               For 20 years working with the most innovative in the field of
@@ -49,15 +67,19 @@ export default {
 <style lang="scss" scoped>
 @use "../../assets/scss/partials/_variables.scss" as *;
 @import "../../assets/scss/main.scss";
+
 .wrapper {
-  height: 860px;
+  min-height: 700px;
   background-image: url(/img/jumbo.jpg);
   background-size: cover;
+  background-position: center;
   .overlay {
     background-color: rgba(0, 0, 0, 0.45);
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+
     .my-container {
       .nav {
         color: $whites;
@@ -84,9 +106,10 @@ export default {
         }
         .menu {
           ul {
+            display: flex;
             li {
               list-style: none;
-              margin: 0 30px;
+              margin: 0 15px;
               display: flex;
               align-items: center;
               height: 50px;
@@ -112,59 +135,88 @@ export default {
             }
           }
         }
+        .dropdown {
+          .dropdown-toggle {
+            background-color: #048383;
+            color: white;
+          }
+          ul {
+            background-color: rgb(184, 184, 184);
+            padding: 5%;
+            li {
+              a {
+                text-decoration: none;
+                color: white;
+              }
+            }
+          }
+        }
       }
+
       .text-wrapper {
         justify-content: flex-end;
-        height: 700px;
+
         align-items: center;
         .text {
+          margin-bottom: 10%;
           position: relative;
           color: $whites;
-          width: 450px;
+          width: 100%;
+          max-width: 450px;
+          text-align: center;
           .underLine {
             position: absolute;
             height: 40px;
-            width: 350px;
+            width: 100%;
+            max-width: 350px;
             background-color: $dark_green_bg;
             top: 60px;
-            left: 3px;
+            left: 50%;
+            transform: translateX(-50%);
           }
           h1 {
             position: relative;
             z-index: 2;
             font-weight: 900;
-            font-size: 5rem;
+            font-size: clamp(2rem, 5vw, 5rem);
           }
           p {
             color: $paragraph;
-            font-size: 1.5rem;
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
           }
           .buttons {
-            .first {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            .first,
+            .second {
               border-radius: 3px;
-              margin-right: 20px;
+              padding: 10px 22px;
+              transition: 0.3s all;
+            }
+
+            .first {
               background-color: $button;
               border: none;
               outline: 2px solid $button;
-              padding: 10px 22px;
-              transition: 0.3s all;
               &:hover {
                 background-color: lighten($button, 5%);
                 outline: 2px solid lighten($button, 5%);
               }
             }
+
             .second {
-              padding: 10px 22px;
-              border-radius: 3px;
               background-color: transparent;
               border: none;
               outline: 2px solid $button;
-              transition: 0.3s all;
               &:hover {
                 background-color: darken($light_green, 20%);
                 outline: 2px solid darken($light_green, 20%);
               }
             }
+
             span {
               color: $whites;
             }
