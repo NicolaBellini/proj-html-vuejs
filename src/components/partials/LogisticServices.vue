@@ -8,8 +8,8 @@ export default {
 
 <template>
   <div class="wrapper">
-    <div class="my-container d-flex">
-      <div>
+    <div class="my-container d-flex flex-column flex-xl-row">
+      <div class="w-100 w-xl-50 me-5">
         <span>OUR BUSINESS AREAS</span>
         <h2>Logistics Services</h2>
         <p>
@@ -23,20 +23,24 @@ export default {
         </div>
         <button class="readMore">READ MORE</button>
       </div>
-      <div class="photo">
-        <img src="../../../public/img/gallery-3.jpg" alt="" />
-        <h3>Technology</h3>
-        <p>
-          Focused on developing technology solutions adapted to our client's
-          needs
-        </p>
-      </div>
-      <div class="photo">
-        <img src="../../../public/img/gallery-5.jpg" alt="" />
-        <h3>Transport</h3>
-        <p>
-          wWe develop operational strategies to improve logistical efficiency
-        </p>
+      <div
+        class="cards d-flex flex-column flex-xxl-row w-100 w-xl-50 justify-content-center align-items-center"
+      >
+        <div class="photo m-3">
+          <img src="../../../public/img/gallery-3.jpg" alt="" />
+          <h3>Technology</h3>
+          <p>
+            Focused on developing technology solutions adapted to our client's
+            needs
+          </p>
+        </div>
+        <div class="photo m-3">
+          <img src="../../../public/img/gallery-5.jpg" alt="" />
+          <h3>Transport</h3>
+          <p>
+            wWe develop operational strategies to improve logistical efficiency
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -46,13 +50,11 @@ export default {
 @use "../../assets/scss/partials/_variables.scss" as *;
 @import "../../assets/scss/main.scss";
 .wrapper {
-  height: 730px;
   background-color: $body_light;
   .my-container {
     justify-content: space-between;
     align-items: center;
     div {
-      height: 420px;
       width: 30%;
       span {
         color: $dark_green;
@@ -93,7 +95,6 @@ export default {
       }
     }
     .photo {
-      height: 415px;
       width: 360px;
       padding: 40px 60px;
       background-color: $whites;
