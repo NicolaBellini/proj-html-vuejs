@@ -62,19 +62,26 @@ export default {
 <style lang="scss" scoped>
 @use "../assets/scss/partials/_variables.scss" as *;
 @import "../assets/scss/main.scss";
+
 .wrapper {
-  height: 670px;
+  // height: 670px;
   background-image: url(/img/bg-10.jpg);
+  padding-bottom: 5%;
   background-size: cover;
   background-position: bottom center;
+
   .container {
     font-size: 1.2rem;
     padding-top: 130px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+
     h4 {
       color: $whites;
     }
+
     .contacts {
       width: 240px;
       margin-right: 30px;
@@ -85,6 +92,7 @@ export default {
         font-size: 1.3rem;
         letter-spacing: 0.3rem;
         font-weight: 700;
+
         .nex {
           color: $light_green;
           padding: 7px 0 7px 27px;
@@ -92,21 +100,26 @@ export default {
           border-top-left-radius: 20px;
           border-bottom-left-radius: 20px;
         }
+
         .gen {
           margin-left: 3px;
           font-weight: 600;
         }
       }
+
       ul {
         margin: 0;
+
         li {
           list-style: none;
           margin-bottom: 15px;
+
           a {
             color: $paragraph;
             text-decoration: none;
           }
         }
+
         button {
           background-color: transparent;
           color: $whites;
@@ -116,19 +129,22 @@ export default {
           border-radius: 4px;
           padding: 7px 20px;
           transition: 0.5s ease all;
+
           &:hover {
             background-color: $dark_green;
           }
         }
       }
     }
+
     .glass {
-      padding: 30px 0 0 20px;
+      padding: 5%;
       width: 260px;
       margin: 0 15px;
       border-radius: 7px;
       background-color: rgba(255, 255, 255, 0.101);
       height: 330px;
+
       ul li::before {
         content: "\203A";
         color: $paragraph;
@@ -137,9 +153,11 @@ export default {
         vertical-align: text-top;
         margin-right: 5px;
       }
+
       h4 {
         margin-left: 10px;
       }
+
       ul {
         margin-left: -20px;
         display: flex;
@@ -149,9 +167,101 @@ export default {
         li {
           list-style: none;
           margin-top: 7px;
+
           a {
             text-decoration: none;
             color: $paragraph;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 80px;
+
+      .contacts,
+      .glass {
+        width: 100%;
+        margin: 15px 0;
+      }
+
+      .contacts {
+        margin-bottom: 30px;
+
+        .logo {
+          text-align: center;
+        }
+
+        ul {
+          text-align: center;
+
+          li {
+            display: inline-block;
+            margin-right: 10px;
+          }
+        }
+
+        button {
+          display: inline-block;
+        }
+      }
+
+      .glass {
+        ul {
+          display: block;
+          text-align: center;
+
+          li {
+            display: inline-block;
+            margin: 5px 10px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: auto;
+    .container {
+      padding-top: 60px;
+
+      .contacts,
+      .glass {
+        width: 90%;
+        margin: 10px 0;
+      }
+
+      .contacts {
+        .logo {
+          font-size: 1.1rem;
+
+          .nex {
+            padding: 5px 0 5px 15px;
+          }
+        }
+
+        ul {
+          li {
+            display: block;
+            margin: 10px 0;
+          }
+        }
+
+        button {
+          margin-top: 20px;
+          padding: 5px 15px;
+        }
+      }
+
+      .glass {
+        ul {
+          li {
+            display: block;
+            margin: 10px 0;
           }
         }
       }
