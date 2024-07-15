@@ -7,7 +7,7 @@ export default {};
     <div class="my-container d-flex">
       <div class="text d-flex flex-column justify-content-between">
         <span>NEWSLETTER</span>
-        <div class="underLine"></div>
+
         <h2>Know First</h2>
         <p>
           Follow closely and receive content about our company and the news of
